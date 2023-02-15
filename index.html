@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | Interactive pricing component</title>
+  </head>
+  <body>
+    <div class="title">
+      <h1>Simple, traffic-based pricing</h1>
+      <p class="offer">
+        Sign-up for our 30-day trial. No credit card required.
+      </p>
+    </div>
+
+    <div class="card">
+      <div class="header">
+        <p class="views">100K PAGEVIEWS</p>
+        <div class="amount">
+          <h1 id="price">$ 16.00</h1>
+          <p class="per">/month</p>
+        </div>
+      </div>
+      <div class="sliders">
+        <input
+          type="range"
+          min="1"
+          max="100"
+          value="16"
+          class="slider"
+          id="myRange"
+          onchange="updateTextInput(this.value)"
+        />
+      </div>
+      <div class="package">
+        <p>Monthly Billing</p>
+        <label class="toggle" for="myToggle">
+          <input class="toggle__input" name="" type="checkbox" id="myToggle" />
+          <div class="toggle__fill"></div>
+        </label>
+        <p>Yearly Billing</p>
+        <p class="discount">25% discount</p>
+      </div>
+      <div class="footer">
+        <div class="list">
+          <ul>
+            <li><i class="fa-solid fa-check"></i>Unlimited Websites</li>
+            <li><i class="fa-solid fa-check"></i>100% data ownership</li>
+            <li><i class="fa-solid fa-check"></i>Email reports</li>
+          </ul>
+        </div>
+        <div class="button">
+          <button>Start my trial</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
